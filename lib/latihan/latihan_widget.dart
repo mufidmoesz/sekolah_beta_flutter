@@ -58,7 +58,7 @@ class _LatihanWidgetState extends State<LatihanWidget> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: Colors.yellow,
-          child: Icon(Icons.abc),
+          child: Icon(Icons.list),
           // child: const Text('ABC',
           //     style: TextStyle(
           //       color: Colors.black,
