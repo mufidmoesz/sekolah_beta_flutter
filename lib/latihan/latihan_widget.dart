@@ -20,11 +20,14 @@ class _LatihanWidgetState extends State<LatihanWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.yellow,
-          title: const Text('Halo saya latihan',
-              style: TextStyle(color: Colors.white)),
-          centerTitle: true,
-        ),
+            backgroundColor: Colors.yellow,
+            title: const Text('Halo saya latihan',
+                style: TextStyle(color: Colors.white)),
+            centerTitle: true,
+            leading: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.more_vert),
+            )),
         body: Column(children: [
           SizedBox(height: 10),
           Center(child: Text('Saya Widget ditengah')),
@@ -58,7 +61,7 @@ class _LatihanWidgetState extends State<LatihanWidget> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: Colors.yellow,
-          child: Icon(Icons.list),
+          child: Icon(Icons.abc, color: Colors.black, size: 30),
           // child: const Text('ABC',
           //     style: TextStyle(
           //       color: Colors.black,
