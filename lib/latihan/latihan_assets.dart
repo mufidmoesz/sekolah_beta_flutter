@@ -17,7 +17,7 @@ class _LatihanAssetsState extends State<LatihanAssets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.grey[200],
         body: Stack(children: [
           Container(
             height: 300,
@@ -58,6 +58,14 @@ class _LatihanAssetsState extends State<LatihanAssets> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.0),
                 color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: const Offset(0, 3), // changes position of shadow
+                  )
+                ],
               ),
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
